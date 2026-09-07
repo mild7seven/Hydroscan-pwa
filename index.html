@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HydroScan PWA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <main>
+    <h1>Analisis Hidrasi Air Seni</h1>
+    
+    <div id="camera-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+    <button id="capture-btn">Ambil Sampel & Analisis</button>
+
+    <div id="result-container">
+      <h2>Hasil Analisis:</h2>
+      <p id="hydration-status">-</p>
+      <p id="water-recommendation">-</p>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
